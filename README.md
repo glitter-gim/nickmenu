@@ -1,0 +1,1 @@
+This source from Glitter_Gim has made some basic features of GNU Board 5.6.10 into a menu, and includes them in the 'dropdown' for 'Author' in the recent posts list. All sources modified by Glitter_Gim are annotated with 'glitter'.
