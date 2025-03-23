@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* 새글 스킨 (latest) */
+.pic_li_lt {position:relative;width:33.3333%;float:left;padding:0 10px;background:#fff}
+.pic_li_lt .lat_title {display:block;line-height:45px;font-size:1.2em;color:#253dbe}
+.pic_li_lt .lat_title a {color:#000;display:inline-block;position:relative}
+.latest_top_wr .pic_li_lt:nth-child(3n+1) {clear: both!important}
+
+.pic_li_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:25px;line-height:25px;color:#aaa;border-radius:3px;text-align:center}
+.pic_li_lt .lt_more:hover {color:#777}
+.pic_li_lt ul:after {display:block;visibility:hidden;clear:both;content:""}
+.pic_li_lt li {border-bottom:1px solid #e5ecee;margin-bottom:10px}
+.pic_li_lt li .lt_img {display:none}
+.pic_li_lt li:first-child .lt_img {display:block;margin:0 0 10px;display:block}
+.pic_li_lt li:first-child .lt_img img, .pic_li_lt li .lt_img video {width:100%;height:auto}
+.pic_li_lt li .pic_li_tit {font-weight:bold;font-size:1.2em;line-height:20px;vertical-align:middle}
+
+.pic_li_lt li .fa-heart {color:#ff0000}
+.pic_li_lt li .fa-lock {display:inline-block;line-height:14px;width:16px;font-size:0.833em;color:#4f818c;background:#cbe3e8;text-align:center;border-radius:2px;font-size:12px;border:1px solid #cbe3e8;vertical-align:middle}
+.pic_li_lt li .new_icon {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#23db79;background:#b9ffda;text-align:center;border-radius:2px;margin-left:2px;font-weight:bold;vertical-align:middle}
+.pic_li_lt li .hot_icon {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#ff0000;background:#ffb9b9;text-align:center;border-radius:2px;vertical-align:middle}
+.pic_li_lt li .fa-caret-right {color:#bbb}
+.pic_li_lt li .fa-download {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#daae37;background:#ffefb9;text-align:center;border-radius:2px;vertical-align:middle}
+.pic_li_lt li .fa-link {display:inline-block;width:16px;line-height:16px;font-size:0.833em;color:#b451fd;background:#edd3fd;text-align:center;border-radius:2px;vertical-align:middle}
+
+.pic_li_lt .profile_img img{border-radius:50%}
+
+.lt_info {padding:10px 0}
+.lt_info .lt_nick {}
+.lt_info .lt_date {color:#888}
+
+.pic_li_lt .empty_li {line-height:145px;color:#666;text-align:center;padding:0}
+.pic_li_lt .empty_li:before {background:none;padding:0}
+
+.pic_li_lt .lt_cmt {background:#e9eff5;color:#3a8afd;font-size:11px;height:16px;line-height:16px;padding:0 5px;border-radius:3px;vertical-align:middle}
+.pic_li_lt .lt_more {position:absolute;top:11px;right:10px;display:block;width:40px;line-height:25px;color:#3a8afd;border-radius:3px;text-align:center}
+.pic_li_lt .lt_more:hover {color:#777}
+
+/* glitter 🔽 글쓴이 드롭다운 스타일 */
+.lt_name {
+    position: relative;
+    cursor: pointer;
+}
+.sv {
+    display: none;
+    position: absolute; /* 기존 static에서 absolute로 변경 */
+    top: 20px;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    min-width: 150px;
+    max-width: 90vw; /* 최대 너비를 화면 크기에 맞게 제한 */
+    width: auto; /* 내용에 맞게 자동 조정 */
+    height: auto;
+    overflow: auto;
+    border-radius: 8px;
+    z-index: 100;
+    white-space: nowrap; /* 줄바꿈 방지 */
+}
+.sv a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+.sv a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background: black;
+    transition: width 0.5s ease;
+}
+.sv a:hover {
+    background: #f4f4f4;
+    font-weight: bold;
+    font-family: '돋움', sans-serif;
+    color: #333;
+    text-decoration: none;
+}
+.sv a:hover::after {
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+.member:hover {
+    font-weight: bold;
+    font-family: '돋움', sans-serif;
+    color: #87CEEB;
+    text-decoration: underline;
+}
+/* glitter 🔼 */
